@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIENAS IŠ PIENININKĖS</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f7fff7;
+color:#333;
+line-height:1.7;
+}
+
+header{
+background:linear-gradient(135deg,#2e7d32,#4caf50);
+color:white;
+text-align:center;
+padding:30px 15px;
+}
+
+
+.logo{
+    width:330px;
+    height:330px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin:0 auto;
+    border:4px solid #2e7d32;
+}
+
+h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:20px;
+font-style:italic;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px 15px;
+}
+
+.section{
+margin:25px 0;
+}
+
+.card{
+background:white;
+border-radius:20px;
+padding:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+margin-bottom:20px;
+}
+
+.card h2{
+color:#2e7d32;
+margin-bottom:15px;
+text-align:center;
+}
+
+.qr-card{
+text-align:center;
+}
+
+.qr-card img{
+width:100%;
+max-width:280px;
+margin:15px auto;
+display:block;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:1fr;
+gap:15px;
+}
+
+.gallery img{
+width:50%;
+border-radius:15px;
+}
+
+.location{
+margin-top:15px;
+padding:15px;
+background:#f4fff4;
+border-radius:15px;
+}
+
+.location h3{
+color:#2e7d32;
+margin-bottom:10px;
+}
+
+.btn{
+display:block;
+width:100%;
+text-align:center;
+padding:14px;
+margin-top:10px;
+background:#2e7d32;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#1b5e20;
+}
+
+ul{
+padding-left:20px;
+}
+
+footer{
+    margin-top:auto;
+    background:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+footer a{
+    color:#555;
+    text-decoration:none;
+    font-size:14px;
+}
+
+footer a:hover{
+    color:#0056b3;
+}
+
+@media(min-width:768px){
+
+.gallery{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+.lang-switch{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.lang-switch a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    padding:10px 16px;
+    background:#fff;
+    color:#2e7d32;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    border:2px solid #fff;
+    transition:.3s;
+}
+
+.lang-switch a:hover{
+    background:#1b5e20;
+    color:#fff;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+   <div class="lang-switch">
+    <a href="index.html">🇷🇺 Русский</a>
+    <a href="en.html">🇬🇧 English</a>
+    <a href="lt.html">🇱🇹 Lietuvių</a>
+</div>
+
+<img src="images/logo.png" alt="Pienas iš pienininkės" class="logo">
+
+<h1>PIENAS IŠ PIENININKĖS</h1>
+
+<p class="subtitle">
+Šviežias pienas Jums
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>👩‍🌾 Apie mus</h2>
+
+<p>Sveiki!</p>
+
+<p>
+Mano vardas <strong>Viktorija Viktorovna Nikolenko</strong>.
+Kiekvieną dieną stengiuosi, kad Kurganinsko gyventojai galėtų įsigyti šviežio natūralaus pieno tiesiai iš gamintojo.
+</p>
+
+<p>
+Parduodame šviežią nenugriebtą vakarinio melžimo pieną, atvėsintą iki <strong>+4°C</strong>. Tinkamas atšaldymas išsaugo pieno šviežumą, skonį ir naudingąsias savybes.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🥛 Mūsų pienas</h2>
+
+<p>
+Mūsų pieną duoda Rusijos juodmargės ir olandų Džersio veislės karvės.
+</p>
+
+<p>
+Pieno riebumas yra nuo <strong>3,6% iki 4,7%</strong>.
+</p>
+
+<p>
+Pienas parduodamas nenugriebtas ir puikiai tinka gaminti:
+</p>
+
+<ul>
+<li>Maconį</li>
+<li>Varškę</li>
+<li>Adygėjos sūrį</li>
+<li>Naminę grietinę</li>
+</ul>
+
+<p>
+Net vasaros karštyje pienas išlieka šviežias, kol parvyksite namo.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🌽 Karvių šėrimas</h2>
+
+<p>
+Mūsų karvės gauna subalansuotą pašarą.
+</p>
+
+<p>
+Racioną sudaro:
+</p>
+
+<ul>
+<li>Kukurūzai</li>
+<li>Silosas</li>
+<li>Aukštos kokybės pašarų mišiniai</li>
+</ul>
+
+<p>
+Toks racionas užtikrina didelį pieno riebumą, puikų skonį ir aukštą kokybę.
+</p>
+
+<br>
+
+</div>
+
+<div class="card">
+
+    <<h2>🐄 Mūsų karvės</h2>
+
+<p style="text-align:center;margin-bottom:15px;">
+Nuo mūsų karvių tiesiai ant Jūsų stalo
+</p>
+
+    <div class="gallery">
+
+        <img src="images/cow1.jpg" alt="Karvė">
+
+        <img src="images/cow2.jpg" alt="Karvė">
+
+    </div>
+
+</div>
+
+<div class="card">
+
+    <h2>💬 Susisiekite su mumis</h2>
+
+<p style="text-align:center;">
+Nuskaitykite QR kodą ir parašykite mums žinutę.
+</p>
+    <img
+        src="images/max.jpeg"
+        alt="Susisiekte su pienininke"
+        style="
+        width:100%;
+        max-width:320px;
+        display:block;
+        margin:20px auto;
+        border-radius:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,.15);
+    ">
+
+    <p style="text-align:center;">
+Pienas • Privatus pokalbis
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📍 Kur mus rasti</h2>
+
+<div class="location">
+
+<h3>🏥 Ligoninės rajonas</h3>
+
+<p>
+Prekyba šalia kiosko „Rospečiat“
+</p>
+
+<p>
+<strong>Trečiadienis:</strong> 07:00 - 12:00
+</p>
+
+<a class="btn"
+href="https://yandex.ru/maps/20702/kurganinsk/?l=carparks&ll=40.595214%2C44.895802&mode=whatshere&whatshere%5Bpoint%5D=40.595228%2C44.895811&whatshere%5Bzoom%5D=19.56&z=19.56"
+target="_blank">
+📍 Atidaryti žemėlapyje
+</a>
+
+</div>
+
+<div class="location">
+
+<h3>🛒 Miesto turgus</h3>
+
+<p>
+Šviežias pienas kiekvieną šeštadienį
+</p>
+
+<p>
+<strong>Šeštadienis:</strong> 06:00 - 10:00
+</p>
+
+<a class="btn"
+href="https://yandex.ru/maps/20702/kurganinsk/?l=carparks&ll=40.587788%2C44.883616&mode=whatshere&whatshere%5Bpoint%5D=40.587619%2C44.884172&whatshere%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D70994284006&z=17.75"
+target="_blank">
+
+📍 Atidaryti žemėlapyje
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>✅ Kodėl renkasi mus</h2>
+
+<ul>
+<li>Kasdien šviežias pienas</li>
+<li>Natūralus nenugriebtas pienas</li>
+<li>Didelis riebumas</li>
+<li>Tiesiai iš gamintojo</li>
+<li>Tinka naminiam sūriui ir varškei gaminti</li>
+<li>Atšaldytas iki +4°C</li>
+<li>Patogios prekybos vietos</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+    <h2>🚜 Mūsų pieno ūkis</h2>
+
+<p>
+Pienas tiekiamas tiesiai iš Kurganinsko rajono pieno ūkio (MTF).
+</p>
+
+<p>
+Daugiau apie ūkį, gyvulių priežiūrą ir pieno gamybą galite sužinoti oficialioje ūkio svetainėje.
+</p>
+
+
+    <a class="btn"
+       href="https://maslenikov77.github.io/mywebsite/"
+       target="_blank">
+       🌐 Aplankyti ūkio svetainę
+    </a>
+
+</div>
+
+</div>
+
+<footer>
+    <a href="https://maslenikov77.github.io/mywebsite/"
+       target="_blank">
+        © 2026 Denis Maslenikov · Web Design & Frontend
+    </a>
+</footer>
+
+</body>
+</html>
