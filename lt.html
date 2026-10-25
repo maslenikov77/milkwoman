@@ -183,6 +183,14 @@ grid-template-columns:repeat(2,1fr);
     color:#fff;
 }
 
+.datetime{
+    text-align:center;
+    color:white;
+    font-size:16px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
 </style>
 </head>
 
@@ -195,7 +203,7 @@ grid-template-columns:repeat(2,1fr);
     <a href="en.html">🇬🇧 English</a>
     <a href="lt.html">🇱🇹 Lietuvių</a>
 </div>
-
+<div id="dateTime" class="datetime"></div>
 <img src="images/logo.png" alt="Pienas iš pienininkės" class="logo">
 
 <h1>PIENAS IŠ PIENININKĖS</h1>
@@ -415,6 +423,29 @@ Daugiau apie ūkį, gyvulių priežiūrą ir pieno gamybą galite sužinoti ofic
         © 2026 Denis Maslenikov · Web Design & Frontend
     </a>
 </footer>
+<script>
+const dateTimeElement = document.getElementById('dateTime');
 
+function updateDateTimeLithuanian() {
+    const now = new Date();
+
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    };
+
+    dateTimeElement.textContent =
+        now.toLocaleString('lt-LT', options);
+}
+
+updateDateTimeLithuanian();
+setInterval(updateDateTimeLithuanian, 1000);
+</script>
 </body>
 </html>

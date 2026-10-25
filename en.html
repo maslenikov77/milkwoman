@@ -184,6 +184,14 @@ grid-template-columns:repeat(2,1fr);
     color:#fff;
 }
 
+.datetime{
+    text-align:center;
+    color:white;
+    font-size:16px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
 </style>
 </head>
 
@@ -191,18 +199,20 @@ grid-template-columns:repeat(2,1fr);
 
 <header>
 
-    <div class="lang-switch">
+<div class="lang-switch">
     <a href="index.html">🇷🇺 Русский</a>
     <a href="en.html">🇬🇧 English</a>
     <a href="lt.html">🇱🇹 Lietuvių</a>
 </div>
+
+<div id="dateTime" class="datetime"></div>
 
 <img src="images/logo.png" alt="Milk from the Milkmaid" class="logo">
 
 <h1>MILK FROM THE MILKMAID</h1>
 
 <p class="subtitle">
-Fresh milk for you
+Fresh Milk for You
 </p>
 
 </header>
@@ -414,6 +424,29 @@ From Our Cows Directly to Your Table
         © 2026 Denis Maslenikov · Web Design & Frontend
     </a>
 </footer>
+<script>
+const dateTimeElement = document.getElementById('dateTime');
 
+function updateDateTimeEnglish() {
+    const now = new Date();
+
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    };
+
+    dateTimeElement.textContent =
+        now.toLocaleString('en-GB', options);
+}
+
+updateDateTimeEnglish();
+setInterval(updateDateTimeEnglish, 1000);
+</script>
 </body>
 </html>
